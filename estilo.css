@@ -1,0 +1,34 @@
+body{
+    background-image: url(imagenes/fondoo.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    font-family: cursive;
+    
+    
+}
+#cuerpo{
+    text-align: center;
+}
+a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.imagenes {
+    display: flex;          
+    justify-content: center;
+    align-items: center;    
+    gap: 10px;              
+    flex-wrap: wrap; 
+    
+   
+}
+.imagenes img {
+    width: 48px; 
+    border-radius: 60%; 
+    object-fit: cover;
+}
+

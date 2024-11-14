@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #todo{ 
+        text-align: center;
+       }
+       a{
+        color: black;
+        text-decoration: none;
+       }
+       .icon{
+            width: 20px; 
+            height: 20px; 
+            display: inline-block; 
+            margin-right: 10px; 
+        }
+        .cabeza{
+            font-family:monospace;
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        .redes {
+            display: flex;          
+    justify-content: center;
+    align-items: center;    
+    gap: 10px;              
+    flex-wrap: wrap; 
+}
+.redes img {
+    width: 48px; 
+    border-radius: 60%; 
+    object-fit: cover;
+}
+.hhh{
+    font-size: 55px;
+}
+.peque{
+    font-size: 25px;
+}
+
+
+.input{
+    height: 30px;
+    width: 300px;
+    text-align: center;
+}
+th{
+    width: 350px;
+
+}
+hr{
+    width: 250px;
+}
+.letra{
+    width: 500px;
+}
+table {
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    width: 9    5%; 
+}
+
+td {
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    text-align: left; 
+}
+tr {
+    background-color: #f9f9f9; 
+}
+
+
+th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2; 
+    text-align: left;
+}
+.cuerpo{
+    display: flex;               /* Usamos Flexbox para alinear los elementos */
+    flex-direction: row;         /* Alinea los elementos en fila (por defecto) */
+    justify-content: space-around; /* Espacio equitativo entre los elementos */
+    align-items: flex-start;     /* Alineación vertical al inicio */
+    flex-wrap: wrap;             /* Permite que los elementos se ajusten en varias filas si es necesario */
+    margin: 20px;
+}
+.plus{
+    background: linear-gradient(to right, blue, white);
+
+}
+.kkchiqui{
+position: absolute;
+left: 150px;
+top: 600px;
+}
+.peq{
+    width: 20%;
+}
+    </style>
+</head>
+<body>
+    <div id="todo">
+    <div class="cabeza">
+        <h1 style="font-size: 42px;" ><a href="index.html">KEVIN KAARL</a></h1>
+        
+        <h2> <img class="icon" src="imagenes/casa.jpg" alt="casa"><a href="index.html">INICIO</a>ㅤ<img class="icon" src="imagenes/lapiz.jpg" alt="lapiz"><a class="blog" href="blog.html">BLOG</a> <img class="icon" src="imagenes/nosotros.jpg" alt="nosotros"><a href="nosotros.html">NOSOTROS</a>ㅤ<img class="icon" src="imagenes/galeria.jpg" alt="galeria"><a href="galeria.html">GALERIA</a>ㅤ <img class="icon" src="imagenes/videos.jpg" alt="videos"><a href="videos.html">VIDEOS</a> <img class="icon" src="imagenes/contactanos.jpg" alt="contactos"><a href="contactos.html">CONTACTOS</a></h2>
+        <br>
+      </div>
+      <div class="plus">
+      <div class="cuerpo">
+        <div class="tabla">
+            <h1>Informacion de Contacto</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Direccion:</th>
+                        <td> <br>2045 Av. la Molina  La Molina, Provincia de Lima</th>
+                    </tr>
+                    <tr>
+                        <td>Telefono:</td>
+                        <td>962703665</td>
+                    </tr> <br>
+                    <tr>
+                        <td>Email:</td>
+                        <td>jodinny.95@gmnail.com</td>
+                    </tr>
+                </tbody>
+        
+
+            </table>
+            <br>
+            <h1>Horario de Atencion</h1>
+            <h3>Area de ventas:</h3>
+            <p>De Lunes a Viernes de 6 am a 6 pm</p>
+        </div>
+        <div class="kkchiqui">
+            <img class="peq" src="imagenes/kkchiqui.jpg" alt="kkchiqui">
+        </div>
+        
+        <div class="formulario">
+            <h1>Escribenos</h1><br>
+            Nombre y Apellido <br><br><input class="input" type="text" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+            Celular <br><br><input class="input" type="tel" name="celular" placeholder="999999999" size="9" required><br><br>
+            Correo Electronico<br><br><input class="input" type="email" name="email" placeholder="usuario@dominio.com" required><br><br>
+            DNI <br><br><input class="input" type="tel" name="celular" placeholder="12345678" size="8" required><br><br>
+            <div>
+                <input type="submit" value="Aceptar" >
+            </div>
+        </div>
+    </div>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7805.150591449696!2d-77.0638910780586!3d-12.003861908493185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce300d8854e1%3A0x6a1b58f36fcc79a6!2sPlaza%20Norte!5e0!3m2!1ses-419!2spe!4v1730777723939!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</div>
+
+
+    <div class="redes">
+        <a href="https://x.com/kevinkaarl"><img src="imagenes/tw.black.jpg" alt="twitter"></a>
+        <a href="https://www.facebook.com/KevinKaarl"><img src="imagenes/bf.black.jpg" alt="facebook"></a>
+        <a href="https://www.tiktok.com/@kevinkaarloficial"><img src="imagenes/tiktok.black.jpg" alt="tiktok"></a>
+        <a href="https://www.instagram.com/kevinkaarl/"><img src="imagenes/ig.black.jpg" alt="instagram"></a>
+    </div>
+</div>
+</body>
+</html>

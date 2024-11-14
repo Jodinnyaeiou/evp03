@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #todo{ 
+        text-align: center;
+       }
+       a{
+        color: black;
+        text-decoration: none;
+       }
+       .icon{
+            width: 20px; 
+            height: 20px; 
+            display: inline-block; 
+            margin-right: 10px; 
+        }
+        .cabeza{
+            font-family:monospace;
+            position:sticky;
+            top:0;
+            background-color: white;
+            z-index: 10;
+        }
+        .redes {
+            display: flex;          
+    justify-content: center;
+    align-items: center;    
+    gap: 10px;              
+    flex-wrap: wrap; 
+}
+.redes img {
+    width: 48px; 
+    border-radius: 60%; 
+    object-fit: cover;
+}
+.grid-container {
+            display: grid;  
+            grid-template-columns: 1fr 1fr 1fr;  
+            grid-template-rows: auto auto auto;  
+            gap: 8px; 
+            padding: 10px; 
+        }
+        .item {
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .arriba {
+            grid-column: span 3;  
+            background-color: blue;
+        }
+        .item-4-5 {
+            grid-column: span 2;
+        }
+        .item-6 {
+            grid-row: span 2;
+        }
+        .item-img {
+            width: 100%;  
+            height: auto;  
+        }
+        .item-img img {
+            width: 50%;  
+            height: auto;  
+        }
+        .grid-container > .item-img:first-of-type {
+            grid-column: 1; 
+        }
+        
+        .grid-container > .item-img:last-of-type {
+            grid-column: 2;  
+        }
+        .menos{
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="todo">
+        <div class="cabeza">
+            <h1 style="font-size: 42px;" ><a href="index.html">KEVIN KAARL</a></h1>
+        
+        <h2> <img class="icon" src="imagenes/casa.jpg" alt="casa"><a href="index.html">INICIO</a>ㅤ<img class="icon" src="imagenes/lapiz.jpg" alt="lapiz"><a class="blog" href="blog.html">BLOG</a>ㅤ <img class="icon" src="imagenes/nosotros.jpg" alt="nosotros"><a href="nosotros.html">NOSOTROS</a> ㅤ<img class="icon" src="imagenes/galeria.jpg" alt="galeria"><a href="galeria.html">GALERIA</a>ㅤ <img class="icon" src="imagenes/videos.jpg" alt="videos"><a href="videos.html">VIDEOS</a> ㅤ<img class="icon" src="imagenes/contactanos.jpg" alt="contactos"><a href="contactos.html">CONTACTOS</a></h2>
+        <br>
+        </div>
+        <div class="grid-container">
+        
+            <div class="item arriba">NOSOTROS</div>
+            <div class="item item-4-5">¿QUIENES SOMOS? <br> <hr> <br>Kevin Eduardo Hernández Carlos (Meoqui, Chihuahua, 15 de mayo de 2000), más conocido como Kevin Kaarl, es un cantante, guitarrista, compositor y músico mexicano. Se especializa en el género de música folk. Lanzó su primer sencillo «Amor viejo» el 18 de septiembre de 2018 y empezó a captar la atención del público, consiguiendo más de siete millones de visualizaciones en YouTube. Meses después, en diciembre de ese mismo año, saltó a la fama con la publicación de «Vámonos a marte» sencillo que alcanzó más de veintitrés millones de reproducciones en YouTube y 104 millones en Spotify. Logró reconocimiento internacional gracias a la viralización de las redes sociales. En 2023 fue el primer ganador del Premio Rolling Stone en Español al artista promesa del año. <br> <br>Durante su infancia y adolescencia participó en coros y bandas musicales. A los 7 años entró a un grupo juvenil en Meoqui; en la primaria, entró al coro de esa misma escuela, y años después entró a otra banda de su ciudad. En 2014 dejó de tocar la guitarra y de cantar para iniciar un proyecto de fotografía y cine. Previo a iniciar su carrera musical, retomó la guitarra, mientras que su hermano gemelo Bryan, inició actuando con la trompeta quien también hace segunda voz en sus presentaciones en vivo.<br><hr><br></div>
+            <div class="item item-6"><img class="menos" src="imagenes/treee.jpg" alt="2x1"></div>
+            <div class="item item-img">
+                <img src="imagenes/footer.jpg" alt="foto1" />
+            </div>
+            <div class="item item-img">
+                <img src="imagenes/sec.jpg" alt="foto2" />
+            </div>
+        </div>
+        <div class="redes">
+            <a href="https://x.com/kevinkaarl"><img src="imagenes/tw.black.jpg" alt="twiter"></a><a href="https://www.facebook.com/KevinKaarl"><img src="imagenes/bf.black.jpg" alt="fb"></a>  <a href="https://www.tiktok.com/@kevinkaarloficial"><img src="imagenes/tiktok.black.jpg" alt="tik tok"></a> 
+            <a href="https://www.instagram.com/kevinkaarl/"><img src="imagenes/ig.black.jpg" alt="ig"></a>
+          </div>
+
+    </div>
+</body>
+</html>
